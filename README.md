@@ -1,15 +1,7 @@
 Git Code: https://github.com/jeoldmixon/Weather
 Git Page: https://jeoldmixon.github.io/Weather/
 
-city (with hx)
-City Name
-Date
-ICON
-Temp
-humidity
-Wind Speed
-UV Index
-Color- favorable, moderate, or severe
+
 
 
 Repository contains quality README file with description, screenshot, and link to deployed application
