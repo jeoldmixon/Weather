@@ -7,6 +7,8 @@
     <title>Document</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
 </head>
@@ -24,99 +26,98 @@
         </h3>
 
     </header>
-
-    <!-- Left Column Side -->
-    <div class="col-12 col-md-3">
-        <div class="card">
-            <h4 class="card-header">City Search:</h4>
-            <div class="input-group">
-                <input class="form-control" placeholder="City or Zip" type="text" id="city-search-box">
-                <span>
+    <div class="container">
+        <!-- Left Column Side -->
+        <div class="col-12 col-md-3">
+            <div class="card">
+                <h4 class="card-header">City Search:</h4>
+                <div class="input-group">
+                    <input class="form-control" placeholder="City" type="text" id="city-search-box">
+                    <span>
                 <button 
                 class="btn btn-outline-secondary"     
                 type="submit"
                 id="city-button-search">
-                <!-- <i class="fa fa-search"></i> -->
+                <i class="fa fa-search"></i>
                 </button>
             </span>
-            </div>
+                </div>
 
+            </div>
+            <div>
+                <ul id="city-list-history">
+                    <!-- Cities Searched Placeholder -->
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>
-                <!-- Cities Searched Placeholder -->
-            </ul>
-        </div>
-    </div>
-    <!-- Right Column Side -->
-    <!-- Two Rows -->
-    <!-- Upper Row -->
-    <div class="card bg-dark text-white">
-        <img src="..." class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </div>
-    <!-- Lower Row -->
-    <!-- Cards in column for 5 day forcast-->
-    <div class="card-group">
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
+        <!-- Right Column Side -->
+        <!-- Two Rows -->
+        <!-- Upper Row -->
+
+
+        <!-- #forcast-today -->
+
+        <div class="card bg-dark text-white">
+            <!-- <img src="..." class="card-img" alt="..."> -->
+            <div class="card-img-overlay">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+        <!-- Lower Row -->
+        <!-- Cards in column for 5 day forcast-->
+        <div class="card-group">
+            <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div id="card1" class="card-body">
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div id="card2" class="card-body">
             </div>
         </div>
     </div>
 
+    <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div id="card3" class="card-body">
+        </div>
+    </div>
+    </div>
+
+    <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div id="card4" class="card-body">
+        </div>
+    </div>
+    </div>
+
+    <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div id="card5" class="card-body">
+        </div>
+    </div>
+    </div>
+
+    </div>
 
 
 
-    <!-- javaScript -->
-    <script src="./js/weather.js"></script>
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- Moments -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- javaScript -->
+    <script src="./js/weather.js"></script>
+
+
+
+
     <!-- To explore from bootstrap website -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
