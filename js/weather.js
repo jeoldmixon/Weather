@@ -40,23 +40,22 @@ $(document).ready(function() {
     function todaysWeatherData(city) {
         fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=0aa49fb30e2b6fa8a9e119c04fffe18e")
             .then(function(response) {
-                console.log(response)
                 return response.json();
             })
             .then(function(data) {
-                var tempature = data.main.temp
-                temp.textContent = tempature
-                var humidity = data.main.humidity
-                humidity.textContent = humidity
-                var windSpeed = data.wind.speed
-                speed.textContent = windSpeed
+                console.log("I am hitting this promise")
+                tempature.innerHTML = data.main.temp;
+
+                // humidity = data.main.humidity
+
+                // windSpeed = data.wind.speed
+
 
 
                 // var todaysWeather = $("#forcast-today")
                 //     // forcastToday.textContent = "";
 
             });
-        todaysWeatherData();
 
 
         // 5 day forcast funtion - array
