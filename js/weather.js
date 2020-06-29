@@ -1,28 +1,25 @@
-// Document ready
-//  City Pulls from API
-//      Current Day
-//          5 Day forcast
-//         
-//create data dynamic in js??
-
-
-// Var needed: date, city, temp, icon, humidity, wind speed, uv index, LAT, LON, 
+var cityName = document.getElementById("cityName")
+var date = document.getElementById("date")
+var icon = document.getElementById("icon")
+var tempature = document.getElementById("tempature")
+var humidity = document.getElementById("humidity")
+var windSpeed = document.getElementById("windSpeed")
+var uvIndex = document.getElementById("uvIndex")
 
 $(document).ready(function() {
+    var displayDate = moment().format("MM/Do/YYY");
 
-    console.log("ready!");
-    // search button on click
-    // local storage for city
+    function setDate() {
+        $("displayDay").text(displayDay)
+    }
+    setDate();
+
     var searchHistory = [];
-
     $("#city-button-search").on('click', function() {
         console.log("This is working now!")
         var city = $("#city-search-box").val();
         searchHistory.push(city);
         localStorage.setItem("city-history", JSON.stringify(searchHistory));
-        // for (i = 0; i < searchHistory.length; i++) {
-        //     listOfCities(searchHistory[i])
-        // }
         listOfCities(searchHistory[searchHistory.length - 1]);
         todaysWeatherData(city);
     });
@@ -38,11 +35,7 @@ $(document).ready(function() {
     function listOfCities(city) {
         var newCityRow = $("<button>").addClass("new-row").text(city);
         $("#city-list-history").append(newCityRow)
-            //Local storage for cities
-
-
     }
-
 
     function todaysWeatherData(city) {
         fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=0aa49fb30e2b6fa8a9e119c04fffe18e")
@@ -51,10 +44,19 @@ $(document).ready(function() {
                 return response.json();
             })
             .then(function(data) {
-                var todaysWeather = $("#forcast-today")
-                    // forcastToday.textContent = "";
+                var tempature = data.main.temp
+                temp.textContent = tempature
+                var humidity = data.main.humidity
+                humidity.textContent = humidity
+                var windSpeed = data.wind.speed
+                speed.textContent = windSpeed
+
+
+                // var todaysWeather = $("#forcast-today")
+                //     // forcastToday.textContent = "";
 
             });
+        todaysWeatherData();
 
 
         // 5 day forcast funtion - array
@@ -85,3 +87,18 @@ $(document).ready(function() {
     };
 
 });
+
+//html for F* <span>&#8457;</span>
+// UNICODEU+02109
+// HEX CODE&#x2109;
+// HTML CODE&#8457;
+// HTML ENTITY—
+// CSS CODE\2109
+// // html example
+// <span>&#8457;</span>
+
+// // css example
+// span {
+//   content: "\2109";
+// }
+//https://www.toptal.com/designers/htmlarrows/symbols/degree-fahrenheit/
