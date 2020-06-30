@@ -63,6 +63,20 @@ $(document).ready(function() {
         // var isNoon = date["dt_txt"].split(" ") == 12:00:00
         // };
 
+
+
+        // 5 day city call
+        // api.openweathermap.org/data/2.5/forecast?q=
+        // + city name 
+        // ”&APPID=0aa49fb30e2b6fa8a9e119c04fffe18e”
+
+        // http://api.openweathermap.org/data/2.5/forecast?q=austin&APPID=0aa49fb30e2b6fa8a9e119c04fffe18e
+
+
+
+
+
+
         // Var myNecData = data.list  // [array]
 
         // for ( var i=0; i < myNecData.length; i++) {
