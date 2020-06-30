@@ -63,6 +63,25 @@ $(document).ready(function() {
         // var isNoon = date["dt_txt"].split(" ") == 12:00:00
         // };
 
+        // Var myNecData = data.list  // [array]
+
+        // for ( var i=0; i < myNecData.length; i++) {
+        // var dtTime = myNecData[i].dt_txt;
+        // var dtTimeNoon = dtTime.split(“ “)[1];   //creates an array— now dtTimeNoon is array
+
+        // If (dtTimeNoon === “12:00:00”) {
+        // let card = $("<div>").addClass("card col-md-2").attr("id", "forecastCard");
+        //                     let cityName = $("<h5>").addClass("card-title").attr("id", "forecastCityName").text(data.city.name);
+        //                     let date = $("<p>").addClass("card-text").text(forecastDate);
+        //                     let temperature = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp + "C")
+        //                     card.append(cityName, date, temperature);
+        //                     $("#weatherForecast").append(card);
+
+
+        // }
+
+        // };
+
 
 
 
